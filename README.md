@@ -63,6 +63,8 @@ mapped(0.5); // => 1050
 
 #### `map(fn, inStart, inEnd, outStart, outEnd)`
 
+`fn` should be a single-arg function that expects values in the range 0..1 and returns a corresponding value in the same range. `map` will wrap this function to accept arguments in the domain `inStart..inEnd` and map, linearly, its output to the range `outStart..outEnd`.
+
 #### `map(fn, outStart, outEnd)`
 
 As above but with implied values of 0 and 1 for `inStart`, `inEnd`.
