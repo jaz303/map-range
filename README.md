@@ -1,3 +1,42 @@
 # map-range
 
-Convert a function that has a domain and range of `0..1` one with an arbitrary domain and range by applying a linear mapping.
+Convert a function that has a domain and range of `0..1` to one with an arbitrary domain and range through application of a linear mapping.
+
+That's a complicated way of saying this:
+
+<table>
+	<thead>
+    <tr>
+      <th><code>x</code></th>
+      <th><code>fn(x)</code></th>
+      <th><code>map(fn, 0, 1, 200, 300)(x)</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>0.25</td>
+      <td>0.25</td>
+      <td>225</td>
+    </tr>
+    <tr>
+      <td>0.5</td>
+      <td>0.5</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td>0.75</td>
+      <td>0.75</td>
+      <td>275</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>300</td>
+    </tr>
+  </tbody>
+</table>
