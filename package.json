@@ -4,7 +4,7 @@
   "description": "Simple function domain/range conversion",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "for t in test/*.js; do node $t; done"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/jaz303/map-range/issues"
   },
-  "homepage": "https://github.com/jaz303/map-range"
+  "homepage": "https://github.com/jaz303/map-range",
+  "devDependencies": {
+    "tape": "~2.12.3"
+  }
 }
