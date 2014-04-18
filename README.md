@@ -40,3 +40,29 @@ That's a complicated way of saying this:
     </tr>
   </tbody>
 </table>
+
+## Installation
+
+    $ npm install map-range
+
+## Usage
+
+```javascript
+var map = require('map-range');
+
+function linear(x) {
+  return x;
+}
+
+var mapped = map(linear, 0, 1, 1000, 1100);
+
+mapped(0.5); // => 1050
+```
+
+## API
+
+#### `map(fn, inStart, inEnd, outStart, outEnd)`
+
+#### `map(fn, outStart, outEnd)`
+
+As above but with implied values of 0 and 1 for `inStart`, `inEnd`.
